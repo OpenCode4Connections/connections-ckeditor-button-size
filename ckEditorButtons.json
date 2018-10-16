@@ -1,0 +1,22 @@
+{
+  "name": "ckeditorbuttons",
+  "title": "CKEditor Buttons",
+  "description": "Increases size of the CKEditor Toolbar buttons ",
+  "services": ["Customizer"],
+  "state": "enabled",
+  "extensions": [
+    {
+      "name": "CKEditor Customizations",
+      "type": "com.ibm.customizer.ui",
+      "payload": {
+        "include-files": ["ckButtonStyle.css"],
+        "include-repo": {
+          "name": "connections-ckeditor-button-size"
+        }
+      },
+      "path": "global",
+      "application": "ckeditorbuttons",
+      "state": "enabled"
+    }
+  ]
+}
